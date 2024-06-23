@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "py-device-control-with-ocr"
+version = "0.1"
+description = ""
+authors = ["clxering"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pillow = "^10.3.0"
+pytesseract = "^0.3.10"
+pywin32 = "^306"
+sqlalchemy = "^2.0.30"
+pyautogui = "^0.9.54"
+psycopg2 = "^2.9.9"
+
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/"
+priority = "primary"
+
+
+[[tool.poetry.source]]
+name = "tencent"
+url = "https://mirrors.cloud.tencent.com/pypi/simple/"
+priority = "primary"
+
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
